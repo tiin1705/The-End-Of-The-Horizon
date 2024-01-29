@@ -1,0 +1,4 @@
+repository "The-End-Of-The-Horizon@Tiinizh@cloud"
+  path "/"
+    smartbranch "/TanDev" 
+     
