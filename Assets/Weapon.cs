@@ -12,13 +12,13 @@ public class Weapon : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        /*if (Input.GetKeyDown(KeyCode.J))
         {
             Debug.Log("Attack");
             anim.SetBool("Attack", true);
         }
         else
-            anim.SetBool("Attack", false);
+            anim.SetBool("Attack", false);*/
 
     }
 }
