@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
-    public bool FacingLeft { get { return FacingLeft; } set { FacingLeft = value; } }
+    public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
 
 
     [SerializeField] private float moveSpeed = 1f;
@@ -94,11 +94,11 @@ public class PlayerController : MonoBehaviour
         if(mousePos.x < playerScreenPoint.x)
         {
             sprite.flipX = true;
-            FacingLeft = true;
+            facingLeft = true;
         }
         else
         {
-            FacingLeft = false;
+            facingLeft = false;
             sprite.flipX = false ;
         }
     }
