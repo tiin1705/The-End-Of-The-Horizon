@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
- 
+    public bool FacingLeft { get { return FacingLeft; } set { FacingLeft = value; } }
+
 
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 5f;
@@ -28,6 +29,8 @@ public class PlayerController : MonoBehaviour
 
     private bool isMoving = false;
     private bool isDashing = false;
+    private bool facingLeft = false;
+
 
     private void Awake()
     {
@@ -91,9 +94,11 @@ public class PlayerController : MonoBehaviour
         if(mousePos.x < playerScreenPoint.x)
         {
             sprite.flipX = true;
+            FacingLeft = true;
         }
         else
         {
+            FacingLeft = false;
             sprite.flipX = false ;
         }
     }
