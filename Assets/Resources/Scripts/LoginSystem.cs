@@ -52,8 +52,8 @@ public class LoginSystem : MonoBehaviour
 
     }
     public void LoginJohn()
-    { 
-        //
+    {
+        SceneManager.LoadScene(0);
     }
     public void LoginCancel()
     {
