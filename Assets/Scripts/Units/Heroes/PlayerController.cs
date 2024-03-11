@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator EndDashRoutine()
     {
         float dashTime = .2f;
-        float dashCD = 1f;
+        float dashCD = 0.5f;
         yield return new WaitForSeconds(dashTime);
         moveSpeed /= dashSpeed;
         trail.emitting = false;
