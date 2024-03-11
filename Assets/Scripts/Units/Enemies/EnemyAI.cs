@@ -1,18 +1,48 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+  
+   private enum State
     {
-        
+        Roaming,
+        Attacking
     }
 
-    // Update is called once per frame
-    void Update()
+    private State state;
+    private EnemyPathfinding enemyPathfinding;
+    private Transform player;
+    private float detectionRange = 2f;
+    private float attackRange = 0.1f;
+
+    private float attackCooldown = 1f;
+    private float attackTimer;
+    private void Awake()
     {
         
+        enemyPathfinding = GetComponent<EnemyPathfinding>();
+        state = State.Roaming;
+    }
+
+    private void Start()
+    {
+        StartCoroutine(RoamingRoutine());
+    }
+
+    private IEnumerator RoamingRoutine()
+    {
+        while(state == State.Roaming)
+        {
+            Vector2 roamPosition = GetRoamingPosition();
+            enemyPathfinding.MoveTo(roamPosition);
+            yield return new WaitForSeconds(2f);
+        }
+    }
+
+    private Vector2 GetRoamingPosition()
+    {
+        return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
     }
 }
