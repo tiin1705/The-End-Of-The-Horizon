@@ -7,6 +7,7 @@ public class EnemyHeath : MonoBehaviour
     EnemyPathfinding enemyPathfinding;
     private Animator animator;
     private KnockBack knockBack;
+    private Flash flash;
 
     [SerializeField] private int staringHealth = 3;
     private int currentHealth;
@@ -14,6 +15,7 @@ public class EnemyHeath : MonoBehaviour
 
     private void Awake()
     {
+        flash = GetComponent<Flash>();
         knockBack = GetComponent<KnockBack>();
     }
     private void Start()
@@ -29,10 +31,10 @@ public void TakeDamage(int damage)
         currentHealth -= damage;
         Debug.Log(currentHealth);
         knockBack.GetKnockedBack(PlayerController.Instance.transform,10f);
-        DetectDeath();
+        StartCoroutine(flash.FlashRoutine());
     }
 
-    private void DetectDeath()
+    public void DetectDeath()
     {
         if (currentHealth <= 0) {
             StartCoroutine(DestroyAfterAnimation());

@@ -484,6 +484,7 @@ GameObject:
   - component: {fileID: 517484487}
   - component: {fileID: 517484488}
   - component: {fileID: 517484489}
+  - component: {fileID: 517484490}
   m_Layer: 0
   m_Name: Sword Skeleton
   m_TagString: Untagged
@@ -702,7 +703,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ac57b14ea820d408ade43acc93ad4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackTime: 0.1
+  knockBackTime: 0.2
+--- !u!114 &517484490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517484479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148b89c537caf544fa732dc67aae6fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whiteFlashMat: {fileID: 2100000, guid: 5846185a88d236d49acb0e1833cfbecb, type: 2}
+  restoreDefaultMatTime: 0.2
 --- !u!1 &559584373
 GameObject:
   m_ObjectHideFlags: 0
