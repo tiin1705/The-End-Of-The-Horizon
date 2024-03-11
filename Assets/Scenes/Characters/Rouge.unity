@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 517484483}
   - component: {fileID: 517484487}
   - component: {fileID: 517484488}
+  - component: {fileID: 517484489}
   m_Layer: 0
   m_Name: Sword Skeleton
   m_TagString: Untagged
@@ -582,6 +583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.5
+  isDead: 0
 --- !u!50 &517484485
 Rigidbody2D:
   serializedVersion: 4
@@ -688,6 +690,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staringHealth: 3
+--- !u!114 &517484489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517484479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ac57b14ea820d408ade43acc93ad4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.1
 --- !u!1 &559584373
 GameObject:
   m_ObjectHideFlags: 0

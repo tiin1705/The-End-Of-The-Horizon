@@ -9,6 +9,8 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance;
+
     private BoxCollider2D boxCollder;
 
     private RaycastHit2D hit;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashSpeed = 5f;
     [SerializeField] private TrailRenderer trail;
 
+    
     private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -34,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         playerControls = new PlayerControls(); 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();

@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
-{
-  
-   private enum State
+{   private enum State
     {
         Roaming,
         Attacking
@@ -19,6 +17,9 @@ public class EnemyAI : MonoBehaviour
 
     private float attackCooldown = 1f;
     private float attackTimer;
+
+    private IEnumerator roamingCoroutine;
+
     private void Awake()
     {
         
@@ -28,9 +29,10 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        roamingCoroutine = RoamingRoutine();
         StartCoroutine(RoamingRoutine());
     }
-
+   
     private IEnumerator RoamingRoutine()
     {
         while(state == State.Roaming)
@@ -45,4 +47,5 @@ public class EnemyAI : MonoBehaviour
     {
         return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
     }
+    
 }
