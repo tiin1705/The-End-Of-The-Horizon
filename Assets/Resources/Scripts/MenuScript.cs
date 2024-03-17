@@ -19,6 +19,8 @@ public class MenuScript : MonoBehaviour
     [SerializeField] GameObject PNButtonSetSave;
     [SerializeField] GameObject PNTitleSavedone;
     [SerializeField] GameObject PNhideTitleSave;
+    [SerializeField] GameObject PanelShop;
+    [SerializeField] GameObject BtnOPShop;
     public void OpenMenu()
     {
         //if (Input.GetKey(KeyCode.Tab)){
@@ -62,6 +64,13 @@ public class MenuScript : MonoBehaviour
         BtnExit.SetActive(true);
         BtnSetting.SetActive(true);
 
+    }
+    public void hideShop()
+    {
+        PanelShop.SetActive(true);
+        BtnOpen.SetActive(false);
+        BtnOPShop.SetActive(false);
+        
     }
 
     //----------------------------//
