@@ -6,5 +6,8 @@ public class Equipment : ScriptableObject
 {
     public string EquipmentName;
     public Sprite Icon;
+    public int Price;
+    public int Durability;
+
     
 }
