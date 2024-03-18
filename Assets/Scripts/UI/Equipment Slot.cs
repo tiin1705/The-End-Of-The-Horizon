@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class EquipmentSlot : MonoBehaviour
+using UnityEngine.EventSystems;
+using System;
+
+public class EquipmentSlot : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image image;
+
+    public event Action<Equipment> OnRightClickEvent; 
 
     private Equipment _equipment;
     public Equipment equipment
@@ -25,8 +30,17 @@ public class EquipmentSlot : MonoBehaviour
         }
     }
 
-
-    private void OnValidate()
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if(eventData != null && eventData.button == PointerEventData.InputButton.Right)
+        {
+            if(equipment != null && OnRightClickEvent != null)
+            {
+                OnRightClickEvent(equipment);
+            }
+        }
+    }
+    protected virtual void OnValidate()
     {
         if (image == null)
         {
