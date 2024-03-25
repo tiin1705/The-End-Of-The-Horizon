@@ -15,7 +15,6 @@ public class EquipmentBorderBox : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < 10; i++) { 
         if (!parentImage.enabled)
         {
             gameObject.SetActive(true);
@@ -27,6 +26,6 @@ public class EquipmentBorderBox : MonoBehaviour
             Debug.Log("false");
 
         }
-        }
+        
     }
 }
