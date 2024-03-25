@@ -71,6 +71,7 @@ public class MenuScript : MonoBehaviour
         BtnOpen.SetActive(false);
         BtnOPShop.SetActive(false);
         
+        
     }
 
     //----------------------------//

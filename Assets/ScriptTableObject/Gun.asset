@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Gun
   description: "Kh\u1EA9u s\xFAng n\xE0y \u1EA3o l\u1EAFm"
-  baseCost: 20
+  baseCost: 5
