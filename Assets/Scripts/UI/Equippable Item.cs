@@ -6,12 +6,13 @@ public enum EquipmentType
 {
     Helmet,
     Chest,
+    Pant,
     Boots,
     Weapon,
     Accessory,
 }
 [CreateAssetMenu]
-public class EquippableItem : Equipment
+public class EquippableItem : Item
 {
     public int StrengthBonus;
     public int AgilityBonus;

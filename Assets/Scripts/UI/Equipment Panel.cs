@@ -6,21 +6,30 @@ using UnityEngine;
 public class EquipmentPanel : MonoBehaviour
 {
     [SerializeField] Transform equipmentSlotParent;
-    [SerializeField] Slot[] slot;
+    [SerializeField] EquipmentSlot[] equipmentslot;
 
-    public event Action<Equipment> OnItemRightClickEvent;
+
+    public event Action<Item> OnItemRightClickedEvent;
+
+    private void Awake()
+    {
+        for (int i = 0; i< equipmentslot.Length; i++)
+        {
+            equipmentslot[i].OnRightClickEvent += OnItemRightClickedEvent;
+        }
+    }
     private void OnValidate()
     {
-        slot = equipmentSlotParent.GetComponentsInChildren<Slot>();
+        equipmentslot = equipmentSlotParent.GetComponentsInChildren<EquipmentSlot>();
     }
     public bool AddItem(EquippableItem item, out EquippableItem previousItem)
     {
-        for (int i = 0; i < slot.Length; i++)
+        for (int i = 0; i < equipmentslot.Length; i++)
         {
-            if (slot[i].EquipmentType == item.EquipmentType)
+            if (equipmentslot[i].EquipmentType == item.EquipmentType)
             {
-                previousItem = (EquippableItem)slot[i].equipment;
-                slot[i].equipment = item;
+                previousItem = (EquippableItem)equipmentslot[i].item;
+                equipmentslot[i].item = item;
                 return true;
             }
         }
@@ -29,11 +38,12 @@ public class EquipmentPanel : MonoBehaviour
     }
     public bool RemoveItem(EquippableItem item)
     {
-        for (int i = 0; i < slot.Length; i++)
+        for (int i = 0; i < equipmentslot.Length; i++)
         {
-            if (slot[i].equipment == item)
+            if (equipmentslot[i].item == item)
             {
-                slot[i].equipment = null;
+                equipmentslot[i].item = null;
+
                 return true;
             }
         }

@@ -5,51 +5,51 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] List<Equipment> equipments;
-    [SerializeField] Transform equipmentParent;
-    [SerializeField] EquipmentSlot[] equipmentSlot;
+    [SerializeField] List<Item> items;
+    [SerializeField] Transform itemParent;
+    [SerializeField] ItemSlot[] itemtSlot;
 
-    public event Action<Equipment> OnRightClickedEvent;
+    public event Action<Item>OnItemRightClickedEvent;
     private void OnValidate()
     {
-        if(equipmentParent != null)
-            equipmentSlot = equipmentParent.GetComponentsInChildren<EquipmentSlot>();
+        if(itemParent != null)
+            itemtSlot = itemParent.GetComponentsInChildren<ItemSlot>();
         RefreshUI();
     }
     private void Awake()
     {
-        for (int i = 0; i < equipmentSlot.Length; i++)
+        for (int i = 0; i < itemtSlot.Length; i++)
         {
-            equipmentSlot[i].OnRightClickEvent += OnRightClickedEvent;
+            itemtSlot[i].OnRightClickEvent += OnItemRightClickedEvent;
         }
     }
 
     private void RefreshUI()
     {
         int i = 0;
-        for(; i < equipments.Count && i < equipmentSlot.Length; i++)
+        for(; i < items.Count && i < itemtSlot.Length; i++)
         {
-            equipmentSlot[i].equipment = equipments[i]; 
+            itemtSlot[i].item = items[i]; 
         }
         
-        for(; i < equipmentSlot.Length; i++)
+        for(; i < itemtSlot.Length; i++)
         {
-            equipmentSlot[i].equipment = null;
+            itemtSlot[i].item = null;
         }
     }
 
-    public bool AddEquipment(Equipment equipment)
+    public bool AddItem(Item item)
     {
         if (IsFull())
             return false;
-        equipments.Add(equipment);
+        items.Add(item);
         RefreshUI();
         return true;
     }
 
-    public bool RemoveEquipment(Equipment equipment)
+    public bool RemoveItem(Item item)
     {
-        if (equipments.Remove(equipment))
+        if (items.Remove(item))
         {
             RefreshUI();
             return true;
@@ -58,6 +58,6 @@ public class Inventory : MonoBehaviour
     }
     public bool IsFull()
     {
-        return equipments.Count >= equipmentSlot.Length;
+        return items.Count >= itemtSlot.Length;
     }
 }
