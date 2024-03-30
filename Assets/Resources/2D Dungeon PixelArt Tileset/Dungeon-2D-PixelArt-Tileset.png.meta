@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: ca1fe683d8872314481b6dbcd87cb1d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5288188997765318534
+    second: Top_Left_Corner_Tile
+  - first:
+      213: -2672306381724259459
+    second: Top_Wall_Tile
+  - first:
+      213: 6764832518669002963
+    second: Top_Right_Corner_Tile
+  - first:
+      213: -8859803436593824983
+    second: Floor_Tiled_Cracked2
+  - first:
+      213: -9141938605990679566
+    second: Floor_Cracked
+  - first:
+      213: 2056942473736830267
+    second: Dungeon-2D-PixelArt-Tileset_5
+  - first:
+      213: -5225876556858284812
+    second: Top_Left_Dungeon_Door_Closed
+  - first:
+      213: -3094171731127790719
+    second: Top_Middle_Dungeon_Door_Closed
+  - first:
+      213: -6558360575689610975
+    second: Top_Right_Dungeon_Door_Closed
+  - first:
+      213: 8925430282067451464
+    second: Left_Wall_Tile
+  - first:
+      213: 4017470158936073506
+    second: Floor_Flat
+  - first:
+      213: -7920979180335983864
+    second: Right_Wall_Tile
+  - first:
+      213: 2365339308313440513
+    second: Bottom_Left_Dungeon_Door_Closed
+  - first:
+      213: -6085209271259904505
+    second: Bottom_Middle_Dungeon_Door_Closed
+  - first:
+      213: -7743214850641337493
+    second: Bottom_Right_Dungeon_Door_Closed
+  - first:
+      213: 5170418447652190022
+    second: Floor_Tiled_flat
+  - first:
+      213: 6961584852583578572
+    second: Floor_Tiled_Cracked
+  - first:
+      213: 2161171272659936262
+    second: Mossy_Wall_Tile3
+  - first:
+      213: -7272623609870431233
+    second: Bottom_Left_Corner_Tile
+  - first:
+      213: 4768812464063954029
+    second: Bottom_Wall_Tile
+  - first:
+      213: -451775213456855256
+    second: Bottom_Right_Corner_Tile
+  - first:
+      213: -3697355384244169913
+    second: Top_Left_Dungeon_Door_Opened
+  - first:
+      213: -5767162948771900228
+    second: Top_Middle_Dungeon_Door_Opened
+  - first:
+      213: 7145941756167820797
+    second: Top_Right_Dungeon_Door_Opened
+  - first:
+      213: 3957419326524138300
+    second: Mossy_Wall_Tile2
+  - first:
+      213: -1820933343298804998
+    second: Mossy_Wall_Tile1
+  - first:
+      213: -4584001840792588798
+    second: Barrel
+  - first:
+      213: 8145951374611147372
+    second: Potion
+  - first:
+      213: 457820117542733627
+    second: Bottom_Left_Dungeon_Door_Opened
+  - first:
+      213: -6975971501963557229
+    second: Bottom_Middle_Dungeon_Door_Opened
+  - first:
+      213: -7265388314283571386
+    second: Bottom_Right_Dungeon_Door_Opened
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d3f7e184abb8c10800000000000000
+      internalID: 2056942473736830267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d523214b2287b24f90a3a8ac10e0d9e
+      internalID: -2035971568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86785503dbb924449b19c204ddb6e0e
+      internalID: -1689000449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d963a2cfac09d814dbbc42e7254a74eb
+      internalID: 620237424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85373e2101be68242a66b02bbacc4331
+      internalID: 1011776841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8f69e7fd27e4a458972d45c6b99a71
+      internalID: -1959003675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d63a2db38f26d74a98b6ba704058b82
+      internalID: 1089929761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d155eb781868aa749b3b833ea636fb38
+      internalID: 1061116103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05965c3ec43c2c64889070ee28a5cbba
+      internalID: -2112049578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24ff73093d2d6545b30d8fad1ff627b
+      internalID: 1020490371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847a32baa4c56bf43872277805871c11
+      internalID: -237667979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0c689d91008204494c9cc950055eb5
+      internalID: -255289862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed06d8c1811f8834b8270794e3d49883
+      internalID: -769567145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bb6f8f1cf76d14ab103ebad88a379d
+      internalID: -1171918486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7b58465122f4d40ab7584b8d4f8f41
+      internalID: 1805734647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c388567cd40abd4e90153595e86cffb
+      internalID: 1043818619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaacdfe3b9a35a844ada765cbcfaf2e6
+      internalID: -1889562334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b06c5263ac303478c0d4e3d3f0b231
+      internalID: 1425050444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2732c9061c18ac44fbfc71f2c0131465
+      internalID: 1630790140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e8f7bb5a72b8b4f877adb96f1996b8
+      internalID: 1841044624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbe32f075206b7439963a7d39898156
+      internalID: 1250523641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efae992a7d825448892127c9c00aee5
+      internalID: 84809555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef8546e5ee258748bf053fa2605aae3
+      internalID: -165445430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e613a773980e14da5b50fb6d066a79
+      internalID: -1733737574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4153d6b12540b4bac2791a15b1c037
+      internalID: -1815901237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ef9b28260603447be90992ca3c9f67
+      internalID: -1695104196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422d4b1325580ed4598353ef952f5843
+      internalID: -449782202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633c7f9a617ffcd4786ca698425a39a8
+      internalID: 879158119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbe5ed8b22d52b46850c1295e3a94d2
+      internalID: 375459542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4016a472c9753e64984298ff94661a91
+      internalID: -527586364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon-2D-PixelArt-Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941eac65149992d44802fa832d029b74
+      internalID: -563213774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dungeon-2D-PixelArt-Tileset_0: -2035971568
+      Dungeon-2D-PixelArt-Tileset_1: -1689000449
+      Dungeon-2D-PixelArt-Tileset_10: -237667979
+      Dungeon-2D-PixelArt-Tileset_11: -255289862
+      Dungeon-2D-PixelArt-Tileset_12: -769567145
+      Dungeon-2D-PixelArt-Tileset_13: -1171918486
+      Dungeon-2D-PixelArt-Tileset_14: 1805734647
+      Dungeon-2D-PixelArt-Tileset_15: 1043818619
+      Dungeon-2D-PixelArt-Tileset_16: -1889562334
+      Dungeon-2D-PixelArt-Tileset_17: 1425050444
+      Dungeon-2D-PixelArt-Tileset_18: 1630790140
+      Dungeon-2D-PixelArt-Tileset_19: 1841044624
+      Dungeon-2D-PixelArt-Tileset_2: 620237424
+      Dungeon-2D-PixelArt-Tileset_20: 1250523641
+      Dungeon-2D-PixelArt-Tileset_21: 84809555
+      Dungeon-2D-PixelArt-Tileset_22: -165445430
+      Dungeon-2D-PixelArt-Tileset_23: -1733737574
+      Dungeon-2D-PixelArt-Tileset_24: -1815901237
+      Dungeon-2D-PixelArt-Tileset_25: -1695104196
+      Dungeon-2D-PixelArt-Tileset_26: -449782202
+      Dungeon-2D-PixelArt-Tileset_27: 879158119
+      Dungeon-2D-PixelArt-Tileset_28: 375459542
+      Dungeon-2D-PixelArt-Tileset_29: -527586364
+      Dungeon-2D-PixelArt-Tileset_3: 1011776841
+      Dungeon-2D-PixelArt-Tileset_30: -563213774
+      Dungeon-2D-PixelArt-Tileset_4: -1959003675
+      Dungeon-2D-PixelArt-Tileset_5: 2056942473736830267
+      Dungeon-2D-PixelArt-Tileset_6: 1089929761
+      Dungeon-2D-PixelArt-Tileset_7: 1061116103
+      Dungeon-2D-PixelArt-Tileset_8: -2112049578
+      Dungeon-2D-PixelArt-Tileset_9: 1020490371
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
