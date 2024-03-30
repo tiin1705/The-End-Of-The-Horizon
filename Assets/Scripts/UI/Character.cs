@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryManager : MonoBehaviour
+public class Character : MonoBehaviour
 {
     [SerializeField] Inventory inventory;
     [SerializeField] EquipmentPanel equipmentPanel;
