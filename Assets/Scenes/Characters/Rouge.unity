@@ -1467,6 +1467,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rouge
       objectReference: {fileID: 0}
+    - target: {fileID: 4861380233890177995, guid: 264fd903e9aceac4caf412fb1a08849a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.193
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861380233890177995, guid: 264fd903e9aceac4caf412fb1a08849a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433655076086207435, guid: 264fd903e9aceac4caf412fb1a08849a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433655076086207435, guid: 264fd903e9aceac4caf412fb1a08849a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.013
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4573013019460634858, guid: 264fd903e9aceac4caf412fb1a08849a, type: 3}
