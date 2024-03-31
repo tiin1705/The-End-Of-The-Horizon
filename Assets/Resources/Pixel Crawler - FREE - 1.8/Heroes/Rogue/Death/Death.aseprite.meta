@@ -77,7 +77,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -90,7 +89,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -132,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 30
-    spriteID: 2ec564184f61c4de1991934d9ce886f6
+    spriteID: 6b9371ecd06849546b6ef6e07a78a998
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +150,7 @@ ScriptedImporter:
       y: 35
       width: 21
       height: 23
-    spriteID: 8b0e306e6eb6045029931b64239985e1
+    spriteID: 2821dc1adaa9a7f459c68c5d4f59069d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 28
       height: 23
-    spriteID: 444a5af361f294630a90e10b869cacfc
+    spriteID: 5a29827adee080242b8cd9e2bab10cb1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +190,7 @@ ScriptedImporter:
       y: 4
       width: 34
       height: 15
-    spriteID: 18e41a61263534db8b227477f18c4e99
+    spriteID: 0ba6307484a60804c94395fa048e9205
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +210,7 @@ ScriptedImporter:
       y: 42
       width: 35
       height: 9
-    spriteID: 0653d3c5cc69d421bbaa13f02ed318f0
+    spriteID: 5d434524892027b44b2bfbbb3213c689
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +230,7 @@ ScriptedImporter:
       y: 42
       width: 35
       height: 11
-    spriteID: fd33c3104657c4f4480931e95ddb827d
+    spriteID: 59677352df6ac0f478e0dcb06727e19e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -257,7 +255,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 30
-      spriteId: 2ec564184f61c4de1991934d9ce886f6
+      spriteId: 6b9371ecd06849546b6ef6e07a78a998
     - name: Death_Frame_1
       frameIndex: 1
       cellRect:
@@ -265,7 +263,7 @@ ScriptedImporter:
         y: 0
         width: 21
         height: 23
-      spriteId: 8b0e306e6eb6045029931b64239985e1
+      spriteId: 2821dc1adaa9a7f459c68c5d4f59069d
     - name: Death_Frame_2
       frameIndex: 2
       cellRect:
@@ -273,7 +271,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 23
-      spriteId: 444a5af361f294630a90e10b869cacfc
+      spriteId: 5a29827adee080242b8cd9e2bab10cb1
     - name: Death_Frame_3
       frameIndex: 3
       cellRect:
@@ -281,7 +279,7 @@ ScriptedImporter:
         y: 0
         width: 34
         height: 15
-      spriteId: 18e41a61263534db8b227477f18c4e99
+      spriteId: 0ba6307484a60804c94395fa048e9205
     - name: Death_Frame_4
       frameIndex: 4
       cellRect:
@@ -289,7 +287,7 @@ ScriptedImporter:
         y: 0
         width: 35
         height: 9
-      spriteId: 0653d3c5cc69d421bbaa13f02ed318f0
+      spriteId: 5d434524892027b44b2bfbbb3213c689
     - name: Death_Frame_5
       frameIndex: 5
       cellRect:
@@ -297,11 +295,10 @@ ScriptedImporter:
         y: 0
         width: 35
         height: 11
-      spriteId: fd33c3104657c4f4480931e95ddb827d
+      spriteId: 59677352df6ac0f478e0dcb06727e19e
     linkedCells: []
     parentIndex: -1
   platformSettings: []
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 32}

@@ -77,7 +77,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -90,7 +89,6 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
-    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -132,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 29
-    spriteID: 9fe7e60adee3c46069e43cb36a735b7a
+    spriteID: 6c597646a08e8e042a041029c3e3773e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +150,7 @@ ScriptedImporter:
       y: 77
       width: 19
       height: 27
-    spriteID: af8801796cc73423da46f2e4c85863a8
+    spriteID: daa0125a3fa818b4aa90a6e89d37bc02
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +170,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 27
-    spriteID: 54af12dd01d0141e4a619124abaae411
+    spriteID: db52bff2433993541801b6dcbce275a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +190,7 @@ ScriptedImporter:
       y: 41
       width: 19
       height: 28
-    spriteID: 5dbb350bdf4304053a92bd6eb31dc281
+    spriteID: a909c1bb7478e604f9b3f415eab52d4f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -217,7 +215,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 29
-      spriteId: 9fe7e60adee3c46069e43cb36a735b7a
+      spriteId: 6c597646a08e8e042a041029c3e3773e
     - name: Idle_Frame_1
       frameIndex: 1
       cellRect:
@@ -225,7 +223,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 27
-      spriteId: af8801796cc73423da46f2e4c85863a8
+      spriteId: daa0125a3fa818b4aa90a6e89d37bc02
     - name: Idle_Frame_2
       frameIndex: 2
       cellRect:
@@ -233,7 +231,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 27
-      spriteId: 54af12dd01d0141e4a619124abaae411
+      spriteId: db52bff2433993541801b6dcbce275a8
     - name: Idle_Frame_3
       frameIndex: 3
       cellRect:
@@ -241,11 +239,10 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 28
-      spriteId: 5dbb350bdf4304053a92bd6eb31dc281
+      spriteId: a909c1bb7478e604f9b3f415eab52d4f
     linkedCells: []
     parentIndex: -1
   platformSettings: []
-  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
