@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
         if (!isDashing)
         {
             isDashing = true;
-            moveSpeed += dashSpeed;
+            moveSpeed *= dashSpeed;
             trail.emitting = true;
             StartCoroutine(EndDashRoutine());
         }
