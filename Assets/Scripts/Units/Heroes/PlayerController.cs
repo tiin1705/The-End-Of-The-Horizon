@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 5f;
     [SerializeField] private TrailRenderer trail;
+    [SerializeField] private Transform weaponCollider;
 
     
     private PlayerControls playerControls;
@@ -105,6 +106,11 @@ public class PlayerController : MonoBehaviour
             facingLeft = false;
             sprite.flipX = false ;
         }
+    }
+
+    public Transform GetWeaponCollider()
+    {
+        return weaponCollider;
     }
 
     private void Dash()

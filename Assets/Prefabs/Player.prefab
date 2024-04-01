@@ -738,6 +738,7 @@ MonoBehaviour:
   moveSpeed: 10
   dashSpeed: 15
   trail: {fileID: 7111761941373307504}
+  weaponCollider: {fileID: 0}
 --- !u!1 &8995060497561371320
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6e6ef27762bf44b9627ef95553892a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentActiveWeapon: {fileID: 0}
 --- !u!1001 &5518598820638212034
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -844,6 +844,10 @@ PrefabInstance:
     - target: {fileID: 7585548263677435367, guid: 46177f182e74c994999ac63b0c7a1a11, type: 3}
       propertyPath: m_Name
       value: 'Sword '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7585548263677435367, guid: 46177f182e74c994999ac63b0c7a1a11, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
