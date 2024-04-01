@@ -30,7 +30,7 @@ public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         Debug.Log(currentHealth);
-        knockBack.GetKnockedBack(PlayerController.Instance.transform,5f);
+        knockBack.GetKnockedBack(PlayerController.Instance.transform,7f);
         StartCoroutine(flash.FlashRoutine());
     }
 
