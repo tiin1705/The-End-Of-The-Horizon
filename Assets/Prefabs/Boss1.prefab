@@ -10,10 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6164710419679924710}
   - component: {fileID: 6538573068543155741}
-  - component: {fileID: 2223528785051244922}
   - component: {fileID: 230566891369404048}
   - component: {fileID: 8930102222590185638}
   - component: {fileID: 8924443537430202720}
+  - component: {fileID: 3701316784326475481}
+  - component: {fileID: 4485323262046665197}
+  - component: {fileID: 5140110749579540475}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: Untagged
@@ -30,8 +32,8 @@ Transform:
   m_GameObject: {fileID: 7073345396119235590}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5020576, y: -0.1728395, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 4.3, y: -5.1844363, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -90,7 +92,93 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &2223528785051244922
+--- !u!50 &230566891369404048
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073345396119235590}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &8930102222590185638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073345396119235590}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76b0e1a912984d5bab4f5f41b87340a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8924443537430202720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073345396119235590}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e376ece897f4e8fa34e4cfafa1d519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+--- !u!95 &3701316784326475481
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073345396119235590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d5907d034f194416b02119b27d60f66, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4485323262046665197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073345396119235590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3ec62aff3fd4c21aea623219107ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!68 &5140110749579540475
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,117 +215,27 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.032968536, y: 0.43017974}
-  - {x: -0.05633754, y: 0.41892123}
-  - {x: -0.08861855, y: 0.27113384}
-  - {x: -0.26075065, y: 0.19568317}
-  - {x: -0.3431599, y: 0.16661416}
-  - {x: -0.39489862, y: 0.11661165}
-  - {x: -0.39320368, y: 0.015544952}
-  - {x: -0.4424201, y: -0.010671094}
-  - {x: -0.49393907, y: -0.080970734}
-  - {x: -0.49558482, y: -0.21701482}
-  - {x: -0.44171128, y: -0.3003843}
-  - {x: -0.39037287, y: -0.43834716}
-  - {x: -0.33023524, y: -0.43440276}
-  - {x: -0.23249392, y: -0.20098788}
-  - {x: -0.21736674, y: -0.1006483}
-  - {x: -0.095471874, y: -0.17881598}
-  - {x: -0.09293172, y: -0.2071344}
-  - {x: -0.1722556, y: -0.26167333}
-  - {x: -0.19520804, y: -0.34326535}
-  - {x: -0.16267769, y: -0.36399302}
-  - {x: -0.20020162, y: -0.4158428}
-  - {x: -0.17297685, y: -0.43467265}
-  - {x: -0.1245446, y: -0.41186056}
-  - {x: -0.061159093, y: -0.29600018}
-  - {x: -0.06578372, y: -0.27507776}
-  - {x: 0.039830226, y: -0.27953768}
-  - {x: 0.05304034, y: -0.2881943}
-  - {x: 0.04832109, y: -0.32977116}
-  - {x: 0.1386026, y: -0.43306705}
-  - {x: 0.18961585, y: -0.42081046}
-  - {x: 0.15497257, y: -0.36107773}
-  - {x: 0.19547597, y: -0.3318101}
-  - {x: 0.11904918, y: -0.20919424}
-  - {x: 0.07045969, y: -0.21199167}
-  - {x: 0.0835664, y: -0.16967349}
-  - {x: 0.20925166, y: -0.08578435}
-  - {x: 0.29278174, y: -0.13225985}
-  - {x: 0.32343543, y: -0.20105495}
-  - {x: 0.29763988, y: -0.25535357}
-  - {x: 0.33762836, y: -0.27839273}
-  - {x: 0.3592746, y: -0.3319015}
-  - {x: 0.42045778, y: -0.28117839}
-  - {x: 0.42593914, y: -0.2571113}
-  - {x: 0.46491784, y: -0.20403522}
-  - {x: 0.4897954, y: -0.24866176}
-  - {x: 0.4936191, y: -0.13525352}
-  - {x: 0.4779004, y: -0.012876611}
-  - {x: 0.44516402, y: 0.07352707}
-  - {x: 0.4145221, y: 0.056254946}
-  - {x: 0.38226637, y: -0.05322976}
-  - {x: 0.3199106, y: -0.059229456}
-  - {x: 0.3978218, y: 0.029667608}
-  - {x: 0.35900018, y: 0.14933226}
-  - {x: 0.28857931, y: 0.19978227}
-  - {x: 0.23256834, y: 0.19790736}
-  - {x: 0.0789126, y: 0.2663146}
-  - {x: 0.04066486, y: 0.42853343}
-  - {x: 0.013794992, y: 0.4286605}
+  - {x: -0.20429955, y: 0.051595}
+  - {x: -0.1367267, y: 0.03837791}
+  - {x: -0.12779362, y: 0.120958984}
+  - {x: -0.072941996, y: 0.1523194}
+  - {x: -0.04044334, y: 0.21497926}
+  - {x: 0.036326643, y: 0.13219666}
+  - {x: 0.13043156, y: 0.18037501}
+  - {x: 0.13516094, y: -0.0039502364}
+  - {x: 0.1508677, y: -0.051302936}
+  - {x: 0.19345951, y: -0.05590576}
+  - {x: 0.21364567, y: -0.0919166}
+  - {x: 0.21364555, y: -0.1005158}
+  - {x: 0.18784806, y: -0.11771407}
+  - {x: 0.18260081, y: -0.13197803}
+  - {x: 0.18280178, y: -0.20638016}
+  - {x: -0.20310941, y: -0.20478542}
+  - {x: -0.20310941, y: -0.20478542}
+  - {x: -0.21170852, y: -0.17898792}
+  - {x: -0.17390418, y: -0.070816755}
+  - {x: -0.20846054, y: 0.051594928}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!50 &230566891369404048
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7073345396119235590}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &8930102222590185638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7073345396119235590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76b0e1a912984d5bab4f5f41b87340a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8924443537430202720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7073345396119235590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e376ece897f4e8fa34e4cfafa1d519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2

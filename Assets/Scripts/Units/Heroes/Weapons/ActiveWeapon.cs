@@ -15,4 +15,11 @@ public class ActiveWeapon : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Boss"))
+        {
+            BossHP.Instance.TakeDamage(10);
+        }
+    }
 }
