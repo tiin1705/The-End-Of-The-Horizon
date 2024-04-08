@@ -30,22 +30,17 @@ public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         Debug.Log(currentHealth);
-        knockBack.GetKnockedBack(PlayerController.Instance.transform,7f);
+        knockBack.GetKnockedBack(PlayerController.Instance.transform,10f);
         StartCoroutine(flash.FlashRoutine());
     }
 
     public void DetectDeath()
     {
         if (currentHealth <= 0) {
-            StartCoroutine(DestroyAfterAnimation());
             animator.SetTrigger("Death");
-            enemyPathfinding.GetComponent<EnemyPathfinding>().SetDead(true);
+            Destroy(gameObject);
 
         }
     }
-    private IEnumerator DestroyAfterAnimation()
-    {
-        yield return new WaitForSeconds(deathAnimationLength);
-        Destroy(gameObject);
-    }
+    
 }
