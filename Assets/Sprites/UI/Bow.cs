@@ -4,32 +4,28 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour, IWeapon
 {
+    [SerializeField] private WeaponInfo weaponInfo;
+    [SerializeField] private GameObject arrowPrefab;
+    [SerializeField] private Transform arrowSpawnPoint;
 
-    private void Update()
+    readonly int FIRE_HASH = Animator.StringToHash("Fire");
+
+    private Animator myAnimator;
+
+    private void Awake()
     {
-        MouseFollowWithOffSet();
+        myAnimator = GetComponent<Animator>();
     }
+   
     public void Attack()
     {
-        Debug.Log("Bow Attack");
-        ActiveWeapon.Instance.ToggleIsAttacking(false);
+        myAnimator.SetTrigger(FIRE_HASH);
+        GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
     }
-
-    private void MouseFollowWithOffSet()
+    public WeaponInfo GetWeaponInfo()
     {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 playerScreenPoint = Camera.main.WorldToScreenPoint(PlayerController.Instance.transform.position);
-
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        
-        if(mousePos.x < playerScreenPoint.x)
-        {
-            ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, -180, 0);
-        }
-        else
-        {
-            ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, angle);
-
-        }
+        return weaponInfo;
     }
+
+   
 }
