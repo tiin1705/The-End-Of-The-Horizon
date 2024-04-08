@@ -7,9 +7,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController> 
 {
-    public static PlayerController Instance;
 
     private BoxCollider2D boxCollder;
 
@@ -36,9 +35,9 @@ public class PlayerController : MonoBehaviour
     private bool facingLeft = false;
 
 
-    private void Awake()
+    protected override void Awake()
     {
-        Instance = this;
+        base.Awake();
         playerControls = new PlayerControls(); 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
