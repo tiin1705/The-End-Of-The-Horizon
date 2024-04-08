@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FireEff_0: -9052760131862384138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
