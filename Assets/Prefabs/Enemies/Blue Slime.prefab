@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dab1ebcff9b1164daca9679b10f7c32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 4
   deathVFXPrefab: {fileID: 1732673944875317053, guid: 1d9169e5444d2024f88198ac2594dc30, type: 3}
   knockBackThrust: 10
 --- !u!114 &5624938212674981400
