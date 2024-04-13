@@ -4,43 +4,46 @@ using UnityEngine;
 
 public class EnemyHeath : MonoBehaviour
 {
-    EnemyPathfinding enemyPathfinding;
-    private Animator animator;
-    private KnockBack knockBack;
-    private Flash flash;
+    [SerializeField] private int startingHealth = 3;
+    [SerializeField] private GameObject deathVFXPrefab;
+    [SerializeField] private float knockBackThrust = 15f;
 
-    [SerializeField] private int staringHealth = 3;
     private int currentHealth;
-    private float deathAnimationLength = 0.8f;
+    private KnockBack knockback;
+    private Flash flash;
 
     private void Awake()
     {
         flash = GetComponent<Flash>();
-        knockBack = GetComponent<KnockBack>();
+        knockback = GetComponent<KnockBack>();
     }
+
     private void Start()
     {
-        currentHealth = staringHealth;
-        animator = GetComponent<Animator>();
-       
+        currentHealth = startingHealth;
+    }
 
-}
-
-public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log(currentHealth);
-        knockBack.GetKnockedBack(PlayerController.Instance.transform,10f);
+        knockback.GetKnockedBack(PlayerController.Instance.transform, knockBackThrust);
         StartCoroutine(flash.FlashRoutine());
+        StartCoroutine(CheckDetectDeathRoutine());
+    }
+
+    private IEnumerator CheckDetectDeathRoutine()
+    {
+        yield return new WaitForSeconds(flash.GetRestoreMatTime());
+        DetectDeath();
     }
 
     public void DetectDeath()
     {
-        if (currentHealth <= 0) {
-            animator.SetTrigger("Death");
+        if (currentHealth <= 0)
+        {
+            Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
-
         }
     }
-    
+
 }
