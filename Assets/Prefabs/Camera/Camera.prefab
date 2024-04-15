@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7992123586266775744}
-  - component: {fileID: 750617301075787489}
+  - component: {fileID: 6608001393957765127}
   m_Layer: 3
   m_Name: Camera Confiner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3628277098236709417}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &750617301075787489
+--- !u!60 &6608001393957765127
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,12 +78,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.025148869, y: 8.043986}
-      - {x: -14.169786, y: 8.135336}
-      - {x: -14.087519, y: -7.82153}
-      - {x: 0.48263276, y: -7.853819}
-      - {x: 14.297482, y: -8.072223}
-      - {x: 14.096659, y: 7.903042}
+    - - {x: -1.423069, y: 8.413513}
+      - {x: -1.4256582, y: 0.27511767}
+      - {x: -1.4416976, y: -0.9038962}
+      - {x: -1.3906578, y: -38.469746}
+      - {x: 73.527824, y: -38.490204}
+      - {x: 73.549355, y: 8.372402}
   m_UseDelaunayMesh: 0
 --- !u!1 &3245016120242469658
 GameObject:
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BoundingShape2D: {fileID: 750617301075787489}
+  m_BoundingShape2D: {fileID: 6608001393957765127}
   m_Damping: 0.5
   m_MaxWindowSize: -1
 --- !u!1 &4739515801485642693
@@ -356,7 +356,7 @@ Transform:
   m_GameObject: {fileID: 5982848474728421499}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 17.519367, y: -0.04251957, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
