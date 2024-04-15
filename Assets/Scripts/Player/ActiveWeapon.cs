@@ -74,17 +74,11 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     private void Attack()
     {
-       if(attackButtonDown && !isAttacking)
+       if(attackButtonDown && !isAttacking && CurrentActiveWeapon)
         {
             AttackCooldown();
             (CurrentActiveWeapon as IWeapon).Attack();
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag.Equals("Boss"))
-        {
-            BossHP.Instance.TakeDamage(10);
-        }
-    }
+
 }
