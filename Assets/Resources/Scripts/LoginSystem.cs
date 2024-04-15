@@ -41,7 +41,7 @@ public class LoginSystem : MonoBehaviour
     }
     public void YesPlay()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
     //----------------------------------//
     public void LoginGame()
