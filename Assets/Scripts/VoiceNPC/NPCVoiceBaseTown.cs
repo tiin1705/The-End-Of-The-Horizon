@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCVoiceBaseTown : MonoBehaviour
 {
@@ -130,6 +131,7 @@ public class NPCVoiceBaseTown : MonoBehaviour
         Voice1.SetActive(true);
         ButtonVoice1.SetActive(true);
         ButtonVoice2.SetActive(true);
+        
     }
 
 }
