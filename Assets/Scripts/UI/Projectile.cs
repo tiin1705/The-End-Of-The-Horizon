@@ -45,9 +45,10 @@ public class Projectile : MonoBehaviour
 
         if(!collision.isTrigger && (enemyHeath || indestructible))
         {
-          //  enemyHeath.TakeDamage(weaponInfo.weaponDamage);
+           enemyHeath.TakeDamage(weaponInfo.weaponDamage);
             Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
             Destroy(gameObject);
+            
         }
     }
 
