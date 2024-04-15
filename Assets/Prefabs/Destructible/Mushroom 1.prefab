@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &565483660813731875
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -123,8 +123,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0036847591, y: -0.0033813715}
-  m_Size: {x: 0.6948695, y: 0.89771485}
+  m_Offset: {x: -0.0036847591, y: 0.4387021}
+  m_Size: {x: 0.6948695, y: 0.9288578}
   m_Direction: 0
 --- !u!114 &7621097238534903236
 MonoBehaviour:
