@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 6164710419679924710}
   - component: {fileID: 6538573068543155741}
   - component: {fileID: 230566891369404048}
-  - component: {fileID: 8930102222590185638}
-  - component: {fileID: 8924443537430202720}
   - component: {fileID: 3701316784326475481}
   - component: {fileID: 4485323262046665197}
   - component: {fileID: 5140110749579540475}
@@ -119,31 +117,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8930102222590185638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7073345396119235590}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76b0e1a912984d5bab4f5f41b87340a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8924443537430202720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7073345396119235590}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e376ece897f4e8fa34e4cfafa1d519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!95 &3701316784326475481
 Animator:
   serializedVersion: 7
@@ -178,6 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3ec62aff3fd4c21aea623219107ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirePS: {fileID: 0}
+  player: {fileID: 0}
+  healthBar: {fileID: 0}
+  healthAmount: 100
+  Delay: 0
 --- !u!68 &5140110749579540475
 EdgeCollider2D:
   m_ObjectHideFlags: 0
