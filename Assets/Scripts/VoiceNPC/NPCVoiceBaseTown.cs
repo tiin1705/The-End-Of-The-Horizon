@@ -51,7 +51,7 @@ public class NPCVoiceBaseTown : MonoBehaviour
         ButtonVoice2.SetActive(true);
         Voice2.SetActive(false);
         ButtonACPTNPC.SetActive(false);
-        SceneManager.LoadScene(2);
+        //SceneManager.LoadScene(2);
 
     }
 
@@ -132,7 +132,7 @@ public class NPCVoiceBaseTown : MonoBehaviour
         Voice1.SetActive(true);
         ButtonVoice1.SetActive(true);
         ButtonVoice2.SetActive(true);
-        SceneManager.LoadScene(4);
+        //SceneManager.LoadScene(4);
         
     }
 
