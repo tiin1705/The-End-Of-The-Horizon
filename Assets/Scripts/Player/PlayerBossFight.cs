@@ -9,7 +9,7 @@ public class PlayerBossFight : MonoBehaviour
     public Image healthBar;
     public float healthAmount = 100f;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Fire"))
         {
