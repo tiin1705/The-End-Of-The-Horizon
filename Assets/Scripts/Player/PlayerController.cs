@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 
 public class PlayerController : Singleton<PlayerController> 
@@ -133,7 +134,6 @@ public class PlayerController : Singleton<PlayerController>
         yield return new WaitForSeconds(dashCD);
         isDashing = false;
     }
-
 
 
 

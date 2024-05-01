@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Boss : MonoBehaviour
 {
@@ -33,6 +34,10 @@ public class Boss : MonoBehaviour
             FirePS.SetActive(true);
             FirePS.transform.position = new Vector2(playerPos.x, playerPos.y);
         }
+    }
+    public void TeleportAttack()
+    {
+        transform.position = GetComponent<Teleporter>().GetDestination().position;
     }
     public void TakeDamage(float damage)
     {
