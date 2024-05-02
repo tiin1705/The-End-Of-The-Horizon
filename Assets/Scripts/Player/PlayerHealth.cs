@@ -28,28 +28,28 @@ public class PlayerHealth : MonoBehaviour
     {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
 
-        if(enemy && canTakeDamage)
+        if(enemy)
         {
-            TakeDamage(1);
-            knockBack.GetKnockedBack(collision.gameObject.transform,knockBackThrustAmount);
+            TakeDamage(1,collision.transform);
           
         }
     }
-    private void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount, Transform hitTransform)
     {
+        if (!canTakeDamage) { return; }
+        knockBack.GetKnockedBack(hitTransform, knockBackThrustAmount);
+        StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;
         currentHealth -= damageAmount;
-        
+        StartCoroutine(DamageRecoveryRoutine());
     }
 
-    private IEnumerator FlashRoutine()
-    {
-        yield return null;
-    }
+    
 
     private IEnumerator DamageRecoveryRoutine()
     {
-        yield return null;
+        yield return new WaitForSeconds(damageRecoveryTimme);
+        canTakeDamage = true;
     }
 
 }

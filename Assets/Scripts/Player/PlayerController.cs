@@ -29,6 +29,7 @@ public class PlayerController : Singleton<PlayerController>
     private Vector2 movement;
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private KnockBack knockBack;
 
     private bool isMoving = false;
     private bool isDashing = false;
@@ -41,7 +42,8 @@ public class PlayerController : Singleton<PlayerController>
         playerControls = new PlayerControls(); 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sprite = GetComponent<SpriteRenderer>();        
+        sprite = GetComponent<SpriteRenderer>();   
+        knockBack = GetComponent<KnockBack>();
     }
 
     private void Start()
@@ -87,6 +89,8 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Move()
     {
+        if(knockBack.gettingKnockedBack) { return; }
+
         rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
     }
 
