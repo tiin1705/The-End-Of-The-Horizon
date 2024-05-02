@@ -17,6 +17,10 @@ public class Boss : MonoBehaviour
     public float fireRate = 1f;
     public float nextFire = Time.time;
 
+    public AudioSource source;
+    public AudioClip teleport;
+    public AudioClip fire;
+
     private void Start()
     {
         FirePS.SetActive(false);
@@ -40,11 +44,13 @@ public class Boss : MonoBehaviour
     }
     public void TeleportAttack()
     {
+        source.PlayOneShot(teleport);
         transform.position = GetComponent<Teleporter>().GetDestination().position;
     }
 
     public void BulletAttack()
     {
+        source.PlayOneShot(fire);
         CheckIfTimeToFire();
     }
     public void TakeDamage(float damage)
