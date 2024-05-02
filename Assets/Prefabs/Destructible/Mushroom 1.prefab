@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 565483660813731875}
   - component: {fileID: 7621097238534903236}
   - component: {fileID: 3062627184638685265}
+  - component: {fileID: -5463987293804310750}
   m_Layer: 0
   m_Name: Mushroom 1
   m_TagString: Untagged
@@ -151,3 +152,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 1732673944875317053, guid: 9af22db42feb94446932d54bed73d992, type: 3}
+--- !u!114 &-5463987293804310750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322915701387500351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goincoinPrefab: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}

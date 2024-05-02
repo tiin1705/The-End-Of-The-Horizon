@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2452119482408791820}
   - component: {fileID: 3080285466868099433}
   - component: {fileID: 8974858693376715004}
+  - component: {fileID: -5296398813548457561}
   m_Layer: 0
   m_Name: Green grass L
   m_TagString: Untagged
@@ -151,3 +152,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 1732673944875317053, guid: ddb30d521b7b5df4fb45055c5fca4e7a, type: 3}
+--- !u!114 &-5296398813548457561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2748746080860020124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goincoinPrefab: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}

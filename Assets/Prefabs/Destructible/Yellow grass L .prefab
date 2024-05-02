@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8528887086344490329}
   - component: {fileID: 9184798625344991987}
   - component: {fileID: 6263561033359305747}
+  - component: {fileID: 6504144158645793236}
   m_Layer: 0
   m_Name: 'Yellow grass L '
   m_TagString: Untagged
@@ -151,3 +152,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 1732673944875317053, guid: 3730c90bc190ac64785f6991dfadfe28, type: 3}
+--- !u!114 &6504144158645793236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4277219105197330713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goincoinPrefab: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}
