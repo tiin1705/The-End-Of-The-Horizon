@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 7086343090423702237}
   - component: {fileID: 5031760290537020546}
   - component: {fileID: 8580477417328641994}
+  - component: {fileID: -4096895636114898770}
   m_Layer: 0
   m_Name: Ghost Boss
   m_TagString: Untagged
@@ -276,3 +277,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &-4096895636114898770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068686502136450179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}
+  healthGlobe: {fileID: 8026676622824451027, guid: 721d903dc907abc41b140be3a49985c1, type: 3}
+  staminaGlobe: {fileID: 8026676622824451027, guid: 563b28355fa712849ba4a9f70b3fc7c7, type: 3}
