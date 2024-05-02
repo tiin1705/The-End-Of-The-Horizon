@@ -566,6 +566,7 @@ GameObject:
   - component: {fileID: 3213960204998887605}
   - component: {fileID: 1623598351517972548}
   - component: {fileID: 7365570140500850407}
+  - component: {fileID: 7640197132463675866}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -754,6 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10127d5a60b19f47b541628bb13da97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 6862720615988773920}
   moveSpeed: 10
   dashSpeed: 4
   trail: {fileID: 7111761941373307504}
@@ -812,6 +814,21 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_SortAtRoot: 0
+--- !u!114 &7640197132463675866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939979809218187315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3b9b85d482cb4408fb6af8ef6cf2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullStaminaImage: {fileID: 21300000, guid: c7cddb24abfab9e4d84e354defa5ee9b, type: 3}
+  emptyStaminaImage: {fileID: 21300000, guid: 6986f32b4e861434ab034c2f451b897e, type: 3}
+  timeBetweenStaminaRefesh: 3
 --- !u!1 &8995060497561371320
 GameObject:
   m_ObjectHideFlags: 0

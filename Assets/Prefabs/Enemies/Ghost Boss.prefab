@@ -65,7 +65,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f775400370e61498f5eb02e22dca7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roamChangeDirFloat: 2
+  roamChangeDirFloat: 0.5
   attackRange: 10
-  enemyType: {fileID: 0}
+  enemyType: {fileID: 5031760290537020546}
   attackCooldown: 3
   stopMovingWhileAttacking: 0
 --- !u!114 &1548208023932482331
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 20
-  deathVFXPrefab: {fileID: 1732673944875317053, guid: ffcc41ee13563e8449ce97311ee87aa2, type: 3}
+  deathVFXPrefab: {fileID: 1732673944875317053, guid: 1edf44fe21e07e545b9929b663ef8bf5, type: 3}
   knockBackThrust: 5
 --- !u!114 &1090044671861273032
 MonoBehaviour:
@@ -260,11 +260,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4716266277022425885, guid: 76b75a067f2a3a0489003a296bed57ac, type: 3}
   bulletMoveSpeed: 7
   burstCount: 5
-  projectilesPerBurst: 6
-  angleSpread: 142
+  projectilesPerBurst: 20
+  angleSpread: 359
   startingDistance: 0.1
   timeBetweenBurst: 0.3
-  restTime: 2
+  restTime: 3
 --- !u!210 &8580477417328641994
 SortingGroup:
   m_ObjectHideFlags: 0

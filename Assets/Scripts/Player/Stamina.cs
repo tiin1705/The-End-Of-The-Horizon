@@ -1,18 +1,74 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Stamina : MonoBehaviour
+public class Stamina : Singleton<Stamina>
 {
-    // Start is called before the first frame update
-    void Start()
+    public int CurrentStamina { get; private set; }
+
+    [SerializeField] private Sprite fullStaminaImage, emptyStaminaImage;
+    [SerializeField] private int timeBetweenStaminaRefesh = 3;
+
+    private Transform staminaContainer;
+    private int startingStamina = 3;
+    private int maxStamina;
+    const string STAMINA_CONTAINER_TEXT = "Stamina Container";
+
+    protected override void Awake()
     {
-        
+        base.Awake();
+
+        maxStamina = startingStamina;
+        CurrentStamina = startingStamina;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        staminaContainer = GameObject.Find(STAMINA_CONTAINER_TEXT).transform;
+    }
+
+    public void UseStamina()
+    {
+        CurrentStamina--;
+        UpdateStaminaImages();
+    }
+
+    public void RefeshStamina()
+    {
+        if(CurrentStamina < maxStamina)
+        {
+            CurrentStamina++;
+        }
+        UpdateStaminaImages();
+    }
+
+    private IEnumerator RefeshStaminaRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(timeBetweenStaminaRefesh);
+            RefeshStamina();
+        }
+    }
+
+    private void UpdateStaminaImages()
+    {
+        for (int i = 0; i < maxStamina; i++)
+        {
+            if (i <= CurrentStamina - 1)
+            {
+                staminaContainer.GetChild(i).GetComponent<Image>().sprite = fullStaminaImage;
+            }
+            else
+            {
+                staminaContainer.GetChild(i).GetComponent<Image>().sprite = emptyStaminaImage;
+            }
+        }
+
+        if(CurrentStamina < maxStamina)
+        {
+            StopAllCoroutines();
+        }
     }
 }
