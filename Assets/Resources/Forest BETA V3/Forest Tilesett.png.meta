@@ -3554,6 +3554,7 @@ TextureImporter:
       Forest Tilesett_0: 2156760351267287590
       Forest Tilesett_1: 3909542436139041470
       Forest Tilesett_10: 3776810716232377631
+<<<<<<< Updated upstream
       Forest Tilesett_100: -461620017
       Forest Tilesett_101: -2012178723
       Forest Tilesett_102: -2056656100
@@ -3621,11 +3622,20 @@ TextureImporter:
       Forest Tilesett_159: 1054774505
       Forest Tilesett_16: 8142501081271459027
       Forest Tilesett_160: 1090819538
+=======
+      Forest Tilesett_11: -6142595249647336516
+      Forest Tilesett_12: 7331365491881670879
+      Forest Tilesett_13: -5965217865480477539
+      Forest Tilesett_14: -8979607607964299354
+      Forest Tilesett_15: 2683585921888523090
+      Forest Tilesett_16: 8142501081271459027
+>>>>>>> Stashed changes
       Forest Tilesett_17: 8774706757089988931
       Forest Tilesett_18: -2274062103443961066
       Forest Tilesett_19: 1224022970031105666
       Forest Tilesett_2: 3877487044204854988
       Forest Tilesett_20: -6565775527252035891
+<<<<<<< Updated upstream
       Forest Tilesett_21: -411335663
       Forest Tilesett_22: 900331202
       Forest Tilesett_23: -793011511
@@ -3712,6 +3722,15 @@ TextureImporter:
       Forest Tilesett_97: 991966150
       Forest Tilesett_98: 653805305
       Forest Tilesett_99: -1691468312
+=======
+      Forest Tilesett_3: 1709371821702618445
+      Forest Tilesett_4: -694459993740224604
+      Forest Tilesett_5: 6590288770524451836
+      Forest Tilesett_6: -716440199197043079
+      Forest Tilesett_7: -1249605600812873568
+      Forest Tilesett_8: -8732470247641366490
+      Forest Tilesett_9: -4192753652295492457
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

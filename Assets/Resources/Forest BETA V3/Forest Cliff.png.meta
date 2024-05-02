@@ -3616,6 +3616,7 @@ TextureImporter:
     nameFileIdTable:
       Forest Cliff_0: 1218032354475613709
       Forest Cliff_1: 8973253521825132913
+<<<<<<< Updated upstream
       Forest Cliff_10: 248140316
       Forest Cliff_100: -1319340067
       Forest Cliff_101: 1307626820
@@ -3780,6 +3781,13 @@ TextureImporter:
       Forest Cliff_97: -1112727010
       Forest Cliff_98: -893613423
       Forest Cliff_99: 137864024
+=======
+      Forest Cliff_2: -2851705562224400885
+      Forest Cliff_3: -6240173544942757693
+      Forest Cliff_4: -2586159943457930083
+      Forest Cliff_5: 4552532446515606160
+      Forest Cliff_6: 1015014305497731091
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

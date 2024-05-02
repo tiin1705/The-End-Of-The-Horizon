@@ -110812,6 +110812,7 @@ TextureImporter:
     nameFileIdTable:
       Sample_0: -1183681620893836794
       Sample_1: -476568084062224559
+<<<<<<< Updated upstream
       Sample_10: 1043221550
       Sample_100: 1092510275
       Sample_1000: 1902879378
@@ -116081,6 +116082,10 @@ TextureImporter:
       Sample_997: -152742522
       Sample_998: -961013071
       Sample_999: -648795071
+=======
+      Sample_2: 3108737332184059735
+      Sample_3: 1094631400899017902
+>>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
