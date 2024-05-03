@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
+
     public GameObject NPCPanel;
     public Text NPCText;
     public string[] NPCLogue;

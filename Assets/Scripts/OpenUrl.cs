@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OpenUrl : MonoBehaviour
 {
+    public int coins;
+    public Text coinUI;
     public GameObject btnBuy;
     public GameObject btnCheck;
     public GameObject TextSuccess;
@@ -23,6 +26,8 @@ public class OpenUrl : MonoBehaviour
         TextReview.SetActive(false);
         TextSuccess.SetActive(true);
         btnclose.SetActive(true);
+        coins++;
+        coinUI.text = "GEM: " + coins.ToString();
     }
     public void close()
     {
@@ -33,6 +38,8 @@ public class OpenUrl : MonoBehaviour
         btnclose.SetActive(false);
         btnBuy.SetActive(true);
 
+
     }
+    
 
 }
