@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : Singleton<PlayerHealth>
 {
@@ -15,6 +16,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private KnockBack knockBack;
     private Flash flash;
     const string HEALTH_SLIDER_TEXT = "Health Slider";
+    public bool IsPaused;
+    public GameObject lose;
 
     protected override void Awake()
     {
@@ -67,7 +70,8 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            Debug.Log("Player Death");
+            Pause();
+            lose.SetActive(true);
         }
     }
 
@@ -85,5 +89,23 @@ public class PlayerHealth : Singleton<PlayerHealth>
         }
         healthSlider.maxValue = maxHealth;
         healthSlider.value = currentHealth;
+    }
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+        IsPaused = true;
+    }
+    public void Resume()
+    {
+        Time.timeScale = 1f;
+        IsPaused = false; ;
+    }
+
+    public void LoadScene()
+    {
+        Resume();
+        lose.SetActive(false);
+        SceneManager.LoadScene(3);
+        currentHealth = maxHealth;
     }
 }
