@@ -4303,6 +4303,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6862720615988773920, guid: 262a882e15773344f9cb728bd446ef30, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8939979809218187315, guid: 262a882e15773344f9cb728bd446ef30, type: 3}
       propertyPath: m_Name
       value: Player
@@ -66012,6 +66016,14 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1427612517}
+    - target: {fileID: 3372597084028139919, guid: dccf427662b9cd54b867c8c0631a2186, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.813381
+      objectReference: {fileID: 0}
+    - target: {fileID: 3372597084028139919, guid: dccf427662b9cd54b867c8c0631a2186, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.559649
+      objectReference: {fileID: 0}
     - target: {fileID: 3622227220292160457, guid: dccf427662b9cd54b867c8c0631a2186, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
