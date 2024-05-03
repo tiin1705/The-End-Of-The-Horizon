@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1983476753805492418}
   - component: {fileID: 1300759543248570897}
   - component: {fileID: 2261906291824222391}
+  - component: {fileID: -7576873524434523968}
   m_Layer: 0
   m_Name: Mushroom 2
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.44, y: -1.93, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -151,3 +152,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyVFX: {fileID: 1732673944875317053, guid: 021aaafe076d67f449256a7bfee12f64, type: 3}
+--- !u!114 &-7576873524434523968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7630228865198235606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}
+  healthGlobe: {fileID: 8026676622824451027, guid: 721d903dc907abc41b140be3a49985c1, type: 3}
+  staminaGlobe: {fileID: 8026676622824451027, guid: 563b28355fa712849ba4a9f70b3fc7c7, type: 3}

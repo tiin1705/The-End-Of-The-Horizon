@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3341700713651215730}
   - component: {fileID: 1064690439960219013}
   - component: {fileID: 4828742758530487531}
+  - component: {fileID: -811318952957110287}
   m_Layer: 0
   m_Name: 'Yellow grass M '
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.51, y: -3.04, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -160,3 +161,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-811318952957110287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4521521671919535871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}
+  healthGlobe: {fileID: 8026676622824451027, guid: 721d903dc907abc41b140be3a49985c1, type: 3}
+  staminaGlobe: {fileID: 8026676622824451027, guid: 563b28355fa712849ba4a9f70b3fc7c7, type: 3}

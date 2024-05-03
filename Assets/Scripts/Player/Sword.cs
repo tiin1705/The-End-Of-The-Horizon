@@ -54,6 +54,7 @@ public class Sword : MonoBehaviour, IWeapon
     public void DoneAttackingEvent()
     {
         weaponCollider.gameObject.SetActive(false);
+       
     }
 
     public void SwingUpFlipAnim()

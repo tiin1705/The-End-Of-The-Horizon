@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8264569015588175061}
   - component: {fileID: 3262379358041311003}
   - component: {fileID: 4142605832918191712}
+  - component: {fileID: 4125651304616702103}
   m_Layer: 0
   m_Name: Barrel 2
   m_TagString: Untagged
@@ -138,3 +139,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.006620407, y: 0.6829357}
   m_Size: {x: 1.0077324, y: 1.4043179}
   m_Direction: 0
+--- !u!114 &4125651304616702103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8648141560261601858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda19def82edb8b4f9322cb48b65dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 8026676622824451027, guid: 2bd5b1dc36cec9a47bb425adec2dac48, type: 3}
+  healthGlobe: {fileID: 8026676622824451027, guid: 721d903dc907abc41b140be3a49985c1, type: 3}
+  staminaGlobe: {fileID: 8026676622824451027, guid: 563b28355fa712849ba4a9f70b3fc7c7, type: 3}
