@@ -762,6 +762,7 @@ GameObject:
   - component: {fileID: 373157333}
   - component: {fileID: 373157335}
   - component: {fileID: 373157334}
+  - component: {fileID: 373157336}
   m_Layer: 5
   m_Name: PN_Lg
   m_TagString: Untagged
@@ -834,6 +835,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373157332}
   m_CullTransparentMesh: 1
+--- !u!114 &373157336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373157332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241a8bfefc987b943add9428819d276a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  edtUser: {fileID: 462524773}
+  edtPass: {fileID: 555058845}
+  edtError: {fileID: 0}
+  first: {fileID: 462524773}
+  eventSystem: {fileID: 0}
+  btnLogin: {fileID: 831699321}
 --- !u!1 &414648132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,21 +2522,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 870231661}
-        m_TargetAssemblyTypeName: LoginSystem, Assembly-CSharp
-        m_MethodName: LoginJohn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1106467062}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlaySoundsuccess
+      - m_Target: {fileID: 373157336}
+        m_TargetAssemblyTypeName: Login_API, Assembly-CSharp
+        m_MethodName: CheckLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3742,7 +3749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1106467062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5172,7 +5179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1780718758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5362,7 +5369,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -5486,7 +5493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2115394156
 AudioSource:
   m_ObjectHideFlags: 0
