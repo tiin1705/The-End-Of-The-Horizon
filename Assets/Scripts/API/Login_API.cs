@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -18,7 +18,8 @@ public class Login_API : MonoBehaviour
     public Selectable first;
     public EventSystem eventSystem;
     public Button btnLogin;
-    public LoginReponse loginReponse;
+    static public LoginReponse loginReponse;
+    static public Getchardata getchardata;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,8 +71,8 @@ public class Login_API : MonoBehaviour
     }
     IEnumerator Login(/*UserModel userModel*/)
     {
-        //�
-        /*var request = new UnityWebRequest("http://teoth.online/API_game/user/login.php", "POST");
+        /*//…
+        *//*var request = new UnityWebRequest("http://teoth.online/API_game/user/login.php", "POST");
         string jsonStringRequest = JsonUtility.ToJson(userModel);
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonStringRequest);
         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
@@ -80,32 +81,51 @@ public class Login_API : MonoBehaviour
         request.chunkedTransfer = false;
         yield return request.SendWebRequest();*/
 
+
+         /* gởi thông tin lên server */
         WWWForm form = new WWWForm();
         form.AddField("email", edtUser.text);
         form.AddField("password", edtPass.text);
 
+        /* gọi API đăng nhập */
         UnityWebRequest request = UnityWebRequest.Post("http://teoth.online/API_game/user/login.php", form);
-        
         yield return request.SendWebRequest();
-
         if (request.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(request.error);
         }
         else
         {
+            /* lấy thông tin đăng nhập server trả về và chuyển nó thành class LoginRespone */
             var jsonString = request.downloadHandler.text.ToString();
             loginReponse = JsonUtility.FromJson<LoginReponse>(jsonString);
-            if (jsonString.Contains("Dang nhap thanh cong"))
+
+            /* kiểm tra status của class LoginRespone */
+            if (loginReponse.status==1)
             {
-                 Debug.Log(jsonString);
-                 Debug.Log(loginReponse.message);
-                    SceneManager.LoadScene(3);
+                /* lấy thông tin của character server trả về và chuyển nó thành class Getchardata */
+                UnityWebRequest charrequest = UnityWebRequest.Get("http://teoth.online/API_game/character/get.php?userID="+loginReponse.userID);
+                yield return charrequest.SendWebRequest();
+
+                if (charrequest.isNetworkError || charrequest.isHttpError)
+                {
+                    Debug.Log(charrequest.error);
+                }
+                else
+                {
+                    Debug.Log(charrequest.downloadHandler.data); 
+                }
+
+                var jsonChar = charrequest.downloadHandler.text.ToString();
+                getchardata = JsonUtility.FromJson<Getchardata>(jsonChar);
+                Debug.Log(loginReponse.message);
+                Debug.Log(getchardata.characterID);
+                SceneManager.LoadScene(3);
             }
             else
             {
-               /* SceneManager.LoadScene(3);*/
-                    
+                /* SceneManager.LoadScene(3);*/
+                Debug.Log(jsonString);
                 Debug.Log(loginReponse.status);
             }
         }
@@ -113,7 +133,7 @@ public class Login_API : MonoBehaviour
 
     IEnumerator Register(UserModel userModel)
     {
-        //�
+        //…
         string jsonStringRequest = JsonUtility.ToJson(userModel, true);
 
         var request = new UnityWebRequest("https://hoccungminh.dinhnt.com/fpt/register", "POST");

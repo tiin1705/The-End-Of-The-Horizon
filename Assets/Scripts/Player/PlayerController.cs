@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 
@@ -35,7 +38,6 @@ public class PlayerController : Singleton<PlayerController>
     private bool isDashing = false;
     private bool facingLeft = false;
 
-
     protected override void Awake()
     {
         base.Awake();
@@ -48,7 +50,18 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Start()
     {
+        
+
         playerControls.Combat.Dash.performed += _ => Dash();
+
+        /* Lấy vị trí */
+        if(Login_API.getchardata.positionX != null)
+        {
+            var posX = Login_API.getchardata.positionX;
+            var posY = Login_API.getchardata.positionY;
+            var posZ = Login_API.getchardata.positionZ;
+            transform.position = new Vector3(posX, posY, posZ);
+        }
     }
     private void OnEnable()
     {
@@ -57,6 +70,12 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Update()
     {
+
+        
+        if (Input.GetKeyDown(KeyCode.P)) {
+            StartCoroutine(UpdateChar());
+        }
+
         PlayerInput();
         if (isMoving)
         {
@@ -140,8 +159,52 @@ public class PlayerController : Singleton<PlayerController>
     }
 
 
+    /* lưu vị trí máu mana */
+    IEnumerator UpdateChar()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        int scene = 0;
+        int buildIndex = currentScene.buildIndex;
+        switch (buildIndex)
+        {
+            case 3:
+                scene = 3;
+                break;
+            case 4:
+                scene = 4;
+                break;
+            case 5:
+                scene = 5;
+                break;
+        }
 
+        SendDataRespone sendData = new SendDataRespone();
+        sendData.positionX = transform.position.x;
+        sendData.positionY = transform.position.y;
+        sendData.positionZ = transform.position.z;
+        sendData.mp = Stamina.Instance.CurrentStamina;
+        sendData.vit = PlayerHealth.Instance.currentHealth;
+        sendData.world = scene;
 
+        
+
+        /* gọi API */
+        var request = new UnityWebRequest("http://teoth.online/API_game/character/update.php?characterID="+Login_API.getchardata.characterID, "POST");
+        string jsonStringRequest = JsonUtility.ToJson(sendData);
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonStringRequest);
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+        yield return request.SendWebRequest();
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(request.error);
+        }
+        else
+        {
+            Debug.Log(Login_API.getchardata.characterID);
+        }
+    }
 
 
 

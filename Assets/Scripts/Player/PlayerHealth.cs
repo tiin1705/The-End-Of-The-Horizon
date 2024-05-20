@@ -11,7 +11,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     [SerializeField] private float damageRecoveryTimme = 1f;
 
     private Slider healthSlider;
-    private int currentHealth;
+    public int currentHealth { get; private set; }
     private bool canTakeDamage = true;
     private KnockBack knockBack;
     private Flash flash;

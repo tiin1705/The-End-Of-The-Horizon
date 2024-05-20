@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
+[System.Serializable]
 public class LoginReponse
 {
-    [field: SerializeField] public int status { get; set; }
-    [field: SerializeField] public string message { get; set; }
-   
+    public int status;
+    public string message;
+    public int userID;
 }
