@@ -1,27 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     private static T instance;
-    public static T Instance { get { return instance; } }
+    public static T Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<T>();
+                if (instance == null)
+                {
+                    Debug.LogError($"No instance of {typeof(T)} found in the scene.");
+                }
+            }
+            return instance;
+        }
+    }
 
     protected virtual void Awake()
     {
-        if (instance != null && this.gameObject != null)
+        if (instance != null && instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
         {
             instance = (T)this;
-        }
-
-        if (!gameObject.transform.parent)
-        {
             DontDestroyOnLoad(gameObject);
         }
-        
     }
 }

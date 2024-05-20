@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Map1.unity
     guid: c71968dbc99ddff46be6694616594782
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Room - Starter.unity
     guid: 1db3ddd45b46bbf479738ec71e1527ad
   - enabled: 0
