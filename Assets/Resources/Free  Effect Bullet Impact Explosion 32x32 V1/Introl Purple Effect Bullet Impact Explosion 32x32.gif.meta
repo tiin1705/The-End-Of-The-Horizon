@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Introl Purple Effect Bullet Impact Explosion 32x32_0: 5126307183423169244
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
