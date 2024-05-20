@@ -5,33 +5,23 @@ using UnityEngine.UI;
 
 public class BossHP : MonoBehaviour
 {
-    public static BossHP Instance { get; private set; }
+    private int health = 20;
+    public GameObject win;
     public Image healthBar;
-    public float healthAmount = 100f;
-    // Start is called before the first frame update
-    void Start()
-    {
+    public float healthAmountPlayer = 20f;
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
 
-        if (healthAmount <= 0)
+        if(health == 0)
         {
-            Heal(50);
+            Time.timeScale = 0f;
+            win.SetActive(true);
         }
     }
-    public void TakeDamage(float damage)
+    public void TakeDamage()
     {
-        healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / 100f;
-    }
-    public void Heal(float healingAmount)
-    {
-        healthAmount += healingAmount;
-        healthAmount = Mathf.Clamp(healthAmount, 0, 100);
-        healthBar.fillAmount = healthAmount / 100f;
+        health--;
+        healthBar.fillAmount = health / 20f;
     }
 }

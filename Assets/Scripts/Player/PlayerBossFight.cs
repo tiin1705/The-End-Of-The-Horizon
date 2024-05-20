@@ -7,13 +7,15 @@ public class PlayerBossFight : MonoBehaviour
 {
     public int health = 50;
     public GameObject Lose;
+    public Image healthBar;
+    public float healthAmountPlayer = 50f;
 
     private void Update()
     {
         if (health == 0)
         {
-            Lose.SetActive(true);
             Time.timeScale = 0f;
+            Lose.SetActive(true);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,6 +29,7 @@ public class PlayerBossFight : MonoBehaviour
     public void TakeDamage()
     {
         health--;
+        healthBar.fillAmount = health / 50f;
         //Debug.Log("Current health: " +health);
     }
 }
