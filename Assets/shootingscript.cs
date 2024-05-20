@@ -4,40 +4,29 @@ using UnityEngine;
 
 public class shootingscript : MonoBehaviour
 {
-    public GameObject bullet;
-    public Transform bulletPos;
-
-    private float timer;
-    //private GameObject player;
+    [SerializeField]
+    GameObject fireball;
+    private float fireRate;
+    private float nextFire;
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("PLayer");
+        fireRate = 5f;
+        nextFire = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //float distance = Vector2.Distance(transform.position, player.transform.position);
-        //Debug.Log(distance);
-        //if(distance < 20)
-        //{
-        //    timer += Time.deltaTime;
-        //    if (timer > 3)
-        //    {
-        //        timer = 0;
-        //        shoot();
-        //    }
-        //}
-        timer += Time.deltaTime;
-        if (timer > 5)
+        CheckIfTimeToFire();
+    }
+    public void CheckIfTimeToFire()
+    {
+        if (Time.time > nextFire)
         {
-            timer = 0;
-            shoot();
+            Instantiate(fireball, transform.position, Quaternion.identity);
+            nextFire = Time.time + fireRate;
         }
     }
-    void shoot()
-    {
-        Instantiate(bullet, bulletPos.position, Quaternion.identity);
-    }
+
 }

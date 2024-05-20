@@ -8,6 +8,9 @@ TagManager:
   - Fir
   - Fire
   - NPC
+  - Block
+  - FxTemporaire
+  - Trigger
   layers:
   - Default
   - TransparentFX

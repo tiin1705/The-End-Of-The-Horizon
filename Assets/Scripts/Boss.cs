@@ -17,7 +17,7 @@ public class Boss : MonoBehaviour
     public float fireRate = 1f;
     public float nextFire = Time.time;
 
-    public AudioSource source;
+    private AudioSource source;
     public AudioClip teleport;
     public AudioClip fire;
 

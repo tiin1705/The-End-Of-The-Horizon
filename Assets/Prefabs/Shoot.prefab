@@ -44,5 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daa1f16f9538e4923abce457df663ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5572789321228231823, guid: eb328a727c5424a1393a9d7ae524f866, type: 3}
-  bulletPos: {fileID: 3128386004362018432}
+  fireball: {fileID: 5572789321228231823, guid: eb328a727c5424a1393a9d7ae524f866, type: 3}
