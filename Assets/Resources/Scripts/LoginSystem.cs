@@ -53,7 +53,7 @@ public class LoginSystem : MonoBehaviour
     }
     public void LoginJohn()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
     public void LoginCancel()
     {

@@ -755,7 +755,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10127d5a60b19f47b541628bb13da97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 6862720615988773920}
   moveSpeed: 10
   dashSpeed: 4
   trail: {fileID: 7111761941373307504}
