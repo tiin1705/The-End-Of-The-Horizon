@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4700230062316508193}
   m_Layer: 0
   m_Name: Fireball
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,9 +77,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8421120900798787151, guid: b7b7b66b9799a4cb48dd4a60ad2c4d1f, type: 3}
-  m_Color: {r: 0.28235295, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9622642, g: 0.66142404, b: 0.33134568, a: 0.83137256}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c83c5c6174984c3e845181cdcd8a070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 20
 --- !u!58 &4700230062316508193
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -158,7 +159,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
