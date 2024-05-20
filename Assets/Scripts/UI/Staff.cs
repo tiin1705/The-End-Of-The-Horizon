@@ -22,7 +22,6 @@ public class Staff : MonoBehaviour, IWeapon
     public void Attack()
     {
         animator.SetTrigger(ATTACK_HASH);
-        Debug.Log("Attack");
     }
 
     public void SpawnStaffProjectileAnimEvent()
