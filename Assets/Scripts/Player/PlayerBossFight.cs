@@ -5,20 +5,28 @@ using UnityEngine.UI;
 
 public class PlayerBossFight : MonoBehaviour
 {
-    public static HealthManager Instance { get; private set; }
-    public Image healthBar;
-    public float healthAmount = 100f;
+    public int health = 50;
+    public GameObject Lose;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
+    {
+        if (health == 0)
+        {
+            Lose.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Fire"))
         {
-            TakeDamage(2);
+            TakeDamage();
         }
     }
-    public void TakeDamage(float damage)
+
+    public void TakeDamage()
     {
-        healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / 100f;
+        health--;
+        //Debug.Log("Current health: " +health);
     }
 }

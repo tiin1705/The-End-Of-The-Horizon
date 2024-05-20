@@ -28,7 +28,7 @@ public class TriggerCount : MonoBehaviour
         {
             //ActivatePos();
             //source.PlayOneShot(audio);
-            TriggerAttack();
+            triggerEffect.SetActive(true);
         }
     }
 

@@ -13,8 +13,6 @@ public class BulletScript : MonoBehaviour
     public LayerMask LayerToHit;
     //private int hp = 100;
     public GameObject explosionEffect1, explosionEffect2;
-    private AudioSource source;
-    public AudioClip audio1, audio2;
 
     [System.Obsolete]
     private void Start()
@@ -32,17 +30,14 @@ public class BulletScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Block"))
         {
             explode1();
-            source.PlayOneShot(audio1);
         }
         if (collision.gameObject.CompareTag("Player"))
         {
             explode2();
-            source.PlayOneShot(audio1);
         }
         if (collision.gameObject.CompareTag("Boss"))
         {
             explode1();
-            source.PlayOneShot(audio1);
             if (trigger != null)
             {
                 trigger.IncreaseCount();
