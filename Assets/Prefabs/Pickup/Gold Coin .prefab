@@ -188,9 +188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81217e319d6395948be9970483e67fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickupDistance: 5
-  accelartionRate: 1
-  moveSpeed: 10
+  pickUpType: 0
+  pickupDistance: 10
+  accelartionRate: 10
+  moveSpeed: 100
   animCurve:
     serializedVersion: 2
     m_Curve:
@@ -225,4 +226,4 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   heightY: 1.5
-  popDuration: 1
+  popDuration: 0.5

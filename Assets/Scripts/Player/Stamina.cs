@@ -69,6 +69,8 @@ public class Stamina : Singleton<Stamina>
         if(CurrentStamina < maxStamina)
         {
             StopAllCoroutines();
+            StartCoroutine(RefeshStaminaRoutine());
+
         }
     }
 }
