@@ -94,7 +94,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &7331233729016576273
 Rigidbody2D:
   serializedVersion: 4
@@ -250,8 +250,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.019945646, y: -0.107262485}
-  m_Size: {x: 1.3234377, y: 0.8712122}
+  m_Offset: {x: -0.0044389307, y: 0.5570567}
+  m_Size: {x: 1.3726808, y: 1.1245438}
   m_Direction: 1
 --- !u!114 &-5885325022369566401
 MonoBehaviour:

@@ -165,6 +165,12 @@ public class PlayerController : Singleton<PlayerController>
         int buildIndex = currentScene.buildIndex;
         switch (buildIndex)
         {
+            case 1:
+                scene = 1;
+                break;
+            case 2:
+                scene = 2;
+                break;
             case 3:
                 scene = 3;
                 break;
