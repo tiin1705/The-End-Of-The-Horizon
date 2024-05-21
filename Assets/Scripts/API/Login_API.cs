@@ -142,6 +142,7 @@ public class Login_API : MonoBehaviour
     IEnumerator Register()
     {
         //…
+        UserModel userModel = new UserModel();
         userModel.email = edtreEmail.text;
         userModel.password = edtrePass.text;
         userModel.username = edtreUsername.text;
