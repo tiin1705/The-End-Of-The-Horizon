@@ -4029,6 +4029,14 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1720320143968225552, guid: 262a882e15773344f9cb728bd446ef30, type: 3}
+      propertyPath: scenetoLoad
+      value: Room - Starter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720320143968225552, guid: 262a882e15773344f9cb728bd446ef30, type: 3}
+      propertyPath: sceneTransitionName
+      value: StarterMap
+      objectReference: {fileID: 0}
     - target: {fileID: 1752640683631619030, guid: 262a882e15773344f9cb728bd446ef30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.01

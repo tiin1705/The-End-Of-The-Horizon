@@ -19,6 +19,12 @@ public class PlayerHealth : Singleton<PlayerHealth>
     public bool IsPaused;
     public GameObject lose;
 
+    [SerializeField] private string sceneTransitionName;
+    private float waitToLoadTime = 1f;
+    [SerializeField] private string scenetoLoad;
+
+
+
     protected override void Awake()
     {
         base.Awake();
@@ -70,9 +76,31 @@ public class PlayerHealth : Singleton<PlayerHealth>
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            Pause();
-            lose.SetActive(true);
+            SceneManagement.Instance.SetTransitionName(sceneTransitionName);
+            StartCoroutine(LoadSceneRoutine());
+            StartCoroutine(HealUp());
         }
+    }
+
+    private IEnumerator LoadSceneRoutine()
+    {
+        while (waitToLoadTime >= 0)
+        {
+            
+            waitToLoadTime -= Time.deltaTime;
+            yield return null;
+        }
+
+        SceneManager.LoadScene(scenetoLoad);
+       
+    }
+
+    private IEnumerator HealUp()
+    {
+        currentHealth = maxHealth;
+        UpdateHealthSlider();
+        Stamina.Instance.RefeshStamina();
+        yield return new WaitForSeconds(1f);
     }
 
     private IEnumerator DamageRecoveryRoutine()
