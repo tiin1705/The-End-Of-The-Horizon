@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 using System.Text;
 using UnityEngine.Networking;
 using System;
+using System.Net.NetworkInformation;
 
 public class Login_API : MonoBehaviour
 {
@@ -15,10 +16,17 @@ public class Login_API : MonoBehaviour
     public InputField edtPass;
     public TMP_InputField edtError;
 
+    public InputField edtreEmail;
+    public InputField edtrePass;
+    public InputField edtreUsername;
+    public InputField edtreName;
+
+
     public Selectable first;
     public EventSystem eventSystem;
     public Button btnLogin;
     static public LoginReponse loginReponse;
+    static public UserModel userModel;
     static public Getchardata getchardata;
     // Start is called before the first frame update
     void Start()
@@ -62,12 +70,12 @@ public class Login_API : MonoBehaviour
     public void CheckRegister()
     {
 
-        var user = edtUser.text;
+        /*var user = edtUser.text;
         var pass = edtPass.text;
 
-        UserModel userModel = new UserModel(user, pass);
-        StartCoroutine(Register(userModel));
-        Register(userModel);
+        UserModel userModel = new UserModel(user, pass);*/
+        StartCoroutine(Register());
+        /*Register(userModel);*/
     }
     IEnumerator Login(/*UserModel userModel*/)
     {
@@ -131,13 +139,21 @@ public class Login_API : MonoBehaviour
         }
     }
 
-    IEnumerator Register(UserModel userModel)
+    IEnumerator Register()
     {
         //…
-        string jsonStringRequest = JsonUtility.ToJson(userModel, true);
+        userModel.email = edtreEmail.text;
+        userModel.password = edtrePass.text;
+        userModel.username = edtreUsername.text;
+        userModel.name = edtreName.text;
+        userModel.balance = 0;
+        userModel.available = 1;
 
-        var request = new UnityWebRequest("https://hoccungminh.dinhnt.com/fpt/register", "POST");
-        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonStringRequest);
+
+        string rejsonStringRequest = JsonUtility.ToJson(userModel);
+
+        var request = new UnityWebRequest("http://teoth.online/API_game/user/register.php", "POST");
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(rejsonStringRequest);
         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
         request.downloadHandler = new DownloadHandlerBuffer();
         request.SetRequestHeader("Content-Type", "application/json");
@@ -148,17 +164,20 @@ public class Login_API : MonoBehaviour
             Debug.Log(request.error);
         }
         else
-        {
-            var jsonString = request.downloadHandler.text.ToString();
-            loginReponse = JsonUtility.FromJson<LoginReponse>(jsonString);
-            if (loginReponse.status == 0)
-            {
-                SceneManager.LoadScene(1);
-            }
-            else
-            {
-                Debug.Log(loginReponse.message);
-            }
+        {   
+            /* Tao con nhan vat */
+            UserRespone userRespone= new UserRespone();
+            userRespone.name = edtreName.text;
+
+            string charjsonStringRequest = JsonUtility.ToJson(userRespone);
+
+            var charrequest = new UnityWebRequest("http://teoth.online/API_game/character/insert.php", "POST");
+            byte[] bodyRawre = Encoding.UTF8.GetBytes(charjsonStringRequest);
+            charrequest.uploadHandler = new UploadHandlerRaw(bodyRawre);
+            charrequest.downloadHandler = new DownloadHandlerBuffer();
+            charrequest.SetRequestHeader("Content-Type", "application/json");
+            yield return charrequest.SendWebRequest();
+            Debug.Log(request.downloadHandler.text);
         }
     }
 

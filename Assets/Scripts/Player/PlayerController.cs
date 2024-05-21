@@ -62,6 +62,8 @@ public class PlayerController : Singleton<PlayerController>
             var posZ = Login_API.getchardata.positionZ;
             transform.position = new Vector3(posX, posY, posZ);
         }
+
+        
     }
     private void OnEnable()
     {

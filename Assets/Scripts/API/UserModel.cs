@@ -3,15 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
+[System.Serializable]
 public class UserModel 
 {
-    public UserModel(string email, string password)
-    {
-        this.email = email;
-        this.password = password;
-    }
-
-    public string email { get; set; }
-    public string password { get; set; }
+    public string email;
+    public string password;
+    public string username;
+    public string name;
+    public int balance;
+    public int available;
 }
