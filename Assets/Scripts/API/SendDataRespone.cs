@@ -10,4 +10,7 @@ public class SendDataRespone
     public int mp;
     public int vit;
     public int world;
+
+    Vector3 pos = PlayerController.Instance.transform.position;
+
 }
