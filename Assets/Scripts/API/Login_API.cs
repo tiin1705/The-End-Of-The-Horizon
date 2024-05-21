@@ -128,7 +128,7 @@ public class Login_API : MonoBehaviour
                 getchardata = JsonUtility.FromJson<Getchardata>(jsonChar);
                 Debug.Log(loginReponse.message);
                 Debug.Log(getchardata.characterID);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(1);
             }
             else
             {
