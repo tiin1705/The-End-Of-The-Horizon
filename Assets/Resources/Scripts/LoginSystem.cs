@@ -41,7 +41,7 @@ public class LoginSystem : MonoBehaviour
     }
     public void YesPlay()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
     //----------------------------------//
     public void LoginGame()
@@ -53,7 +53,7 @@ public class LoginSystem : MonoBehaviour
     }
     public void LoginJohn()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
     public void LoginCancel()
     {

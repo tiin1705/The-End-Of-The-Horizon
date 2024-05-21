@@ -7,30 +7,17 @@ public class HealthManager : MonoBehaviour
 {
     public static HealthManager Instance { get; private set; }
     public Image healthBar;
-    public float healthAmount = 100f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float healthAmountPlayer = 100f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (healthAmount <=0)
-        {
-            Heal(50);
-        }
-    }
     public void TakeDamage(float damage)
     {
-        healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / 100f;
+        healthAmountPlayer -= damage;
+        healthBar.fillAmount = healthAmountPlayer / 100f;
     }
     public void Heal(float healingAmount)
     {
-        healthAmount += healingAmount;
-        healthAmount = Mathf.Clamp(healthAmount, 0, 100);
-        healthBar.fillAmount = healthAmount / 100f;
+        healthAmountPlayer += healingAmount;
+        healthAmountPlayer = Mathf.Clamp(healthAmountPlayer, 0, 100);
+        healthBar.fillAmount = healthAmountPlayer / 100f;
     }
 }
